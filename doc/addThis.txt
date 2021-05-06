@@ -1,0 +1,25 @@
+Current build
+-------------
+
+Add
+-------------
+Bugs: Runs out of memory when trying to create all formulas of size 4+
+
+Eliminate formulas where 2 clauses have the same booleans, but exactly 1 of them is the opposite sign.
+
+Replace SimpleLogicNode with something smaller. (Current size is 32 bytes)
+(Possibly store clauses in a massive Vec and include
+Delete/Overwrite existing truth table files when creating new truth table files. (overwriting already happens)
+Include equivalences like:
+p <=> a v b v c
+(p <=> q) <=> r
+Chain Equivalence: (p & q & r) | (~p & ~q & ~r)
+p & (q <=> r)
+
+DPLL
+CDCL
+CNF Sat Solver
+Load CNF files
+Parse actual formulas
+Non-CNF Sat Solver
+

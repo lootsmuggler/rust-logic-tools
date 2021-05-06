@@ -1,0 +1,23 @@
+Build 3 (05/05/21)
+------------------
+Renamed project to Rust Logic Tools
+Writes truth table html files to Documents/Loot Smuggler/Rust Logic Tools
+refactor: TruthTableFormulaBucket -> LogicFormulaBucket
+refactor: Booleans are numbered from 1 to n instead of from 0 to n-1
+Create a BucketFactory struct to add formulas to the appropriate buckets
+TRUE/FALSE SimpleLogicNodes for tautologies/contradictions
+Truth Table Generation: Generates formulas with up to n clauses
+Truth Table Generation: Filters out subsumption of clauses and p &/| ~p.
+Added command line arguments.
+
+Build 2? (04/13/21)
+------------------
+Changed literals from i32 to u32, still with the most significant bit as a flag for negation
+Can output truth tables to html
+Outputs bitmasks for truth tables up to size 5
+Can output lists in html
+Map CNFs/DNFs to truth tables
+
+Build 1 (01/08/2021)
+--------------------
+First build (Hello World level of logic formula code)
